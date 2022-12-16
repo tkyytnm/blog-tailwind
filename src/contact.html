@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>お問い合わせフォーム</title>
+    <link rel="stylesheet" href="output.css" />
+  </head>
+  <body class="bg-gray-50">
+    <section class="text-gray-600 w-full flex flex-col items-center px-2">
+      <h1 class="text-3xl font-bold mt-10">お問い合わせ</h1>
+      <p class="m-10">
+        お問い合わせは下記のフォームからお願いいたします。<br /><span
+          class="text-red-600"
+        >
+          * </span
+        >は必ず入力してください。
+      </p>
+      <form class="shadow-md rounded-md bg-white w-full max-w-2xl p-10">
+        <div class="flex sm:items-center mb-6 flex-col sm:flex-row">
+          <label
+            class="block sm:w-1/3 font-bold sm:text-right mb-1 pr-4"
+            for="type"
+            >お問い合わせの種類 <span class="text-red-600"> * </span></label
+          ><select
+            class="block w-full sm:w-2/3 bg-gray-200 py-2 px-3 text-gray-700 border border-gray-200 rounded focus:outline-none focus:bg-white"
+            id="type"
+          >
+            <option>商品について</option>
+            <option>会社について</option>
+            <option>その他</option>
+          </select>
+        </div>
+        <div class="flex sm:items-center mb-6 flex-col sm:flex-row">
+          <label
+            class="block sm:w-1/3 font-bold sm:text-right mb-1 pr-4"
+            for="name"
+            >名前 <span class="text-red-600"> * </span></label
+          ><input
+            class="block w-full sm:w-2/3 bg-gray-200 py-2 px-3 text-gray-700 border border-gray-200 rounded focus:outline-none focus:bg-white"
+            id="name"
+            type="text"
+            placeholder="山田太郎"
+          />
+        </div>
+        <div class="flex sm:items-center mb-6 flex-col sm:flex-row">
+          <label
+            class="block sm:w-1/3 font-bold sm:text-right mb-1 pr-4"
+            for="furigana"
+            >フリガナ</label
+          ><input
+            class="block w-full sm:w-2/3 bg-gray-200 py-2 px-3 text-gray-700 border border-gray-200 rounded focus:outline-none focus:bg-white"
+            type="text"
+            id="furigana"
+            placeholder="ヤマダタロウ"
+          />
+        </div>
+        <div class="flex sm:items-center mb-6 flex-col sm:flex-row">
+          <label
+            class="block sm:w-1/3 font-bold sm:text-right mb-1 pr-4"
+            for="email"
+            >メールアドレス <span class="text-red-600"> * </span></label
+          ><input
+            class="block w-full sm:w-2/3 bg-gray-200 py-2 px-3 text-gray-700 border border-gray-200 rounded focus:outline-none focus:bg-white"
+            type="email"
+            id="email"
+            placeholder="yamada@example.com"
+          />
+        </div>
+        <div class="flex sm:items-center mb-6 flex-col sm:flex-row">
+          <label
+            class="block sm:w-1/3 font-bold sm:text-right mb-1 pr-4"
+            for="tel"
+            >電話番号</label
+          ><input
+            class="block w-36 bg-gray-200 py-2 px-3 text-gray-700 border border-gray-200 rounded focus:outline-none focus:bg-white"
+            type="text"
+            id="tel"
+            placeholder="00000000000"
+          />
+        </div>
+        <div class="flex sm:items-center mb-6 flex-col sm:flex-row">
+          <label
+            class="block sm:w-1/3 font-bold sm:text-right mb-1 pr-4"
+            for="zipcode"
+            >郵便番号</label
+          ><input
+            class="block w-24 bg-gray-200 py-2 px-3 text-gray-700 border border-gray-200 rounded focus:outline-none focus:bg-white"
+            type="text"
+            id="zipcode"
+            placeholder="0000000"
+          />
+        </div>
+        <div class="flex sm:items-center mb-6 flex-col sm:flex-row">
+          <label
+            class="block w-full sm:w-1/3 font-bold sm:text-right mb-1 pr-4"
+            for="address"
+            >住所</label
+          ><input
+            class="block w-full sm:w-2/3 bg-gray-200 py-2 px-3 text-gray-700 border border-gray-200 rounded focus:outline-none focus:bg-white"
+            type="text"
+            id="address"
+          />
+        </div>
+        <div class="flex sm:items-center mb-6 flex-col sm:flex-row">
+          <label
+            class="block sm:w-1/3 font-bold sm:text-right mb-1 pr-4"
+            for="body"
+            >お問い合わせ内容 <span class="text-red-600"> * </span></label
+          ><textarea
+            class="block w-full sm:w-2/3 bg-gray-200 py-2 px-3 text-gray-700 border border-gray-200 rounded focus:outline-none focus:bg-white"
+            name="body"
+            id="body"
+            cols="30"
+            rows="10"
+          ></textarea>
+        </div>
+        <div class="flex justify-center">
+          <button
+            class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded fucus:outline-none focus:shadow-outline mt-3"
+          >
+            確認
+          </button>
+        </div>
+      </form>
+      <p class="my-5 text-gray-500 text-sm">
+        &copy;2022 Takuyay. All rights reserved.
+      </p>
+    </section>
+  </body>
+</html>
